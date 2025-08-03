@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Meta Tags -->
+  <title>Accessible Web Design Tips</title>
+  <meta name="description" content="Learn the basics of semantic HTML5 structure, accessibility best practices, and SEO principles through a simple, clean webpage.">
+  <meta name="keywords" content="HTML5, accessibility, semantic tags, SEO, beginner web design">
+  <meta name="author" content="Akinlolu Felicia" />
+</head>
+
+<body>
+  <!-- Site Header -->
+  <header>
+    <h1>Accessible Web Design</h1>
+    <p>Making websites that are readable, accessible, and optimized for all.</p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#principles">Key Principles</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Section -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About This Page</h2>
+      <p>This page is built using only semantic HTML5 elements. It follows best practices for accessibility and search engine optimization (SEO).</p>
+    </section>
+
+    <!-- Key Principles Section -->
+    <section id="principles" aria-labelledby="principles-heading">
+      <h2 id="principles-heading">Key Web Design Principles</h2>
+      
+      <article>
+        <h3>Semantic HTML</h3>
+        <p>Semantic tags like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;footer&gt;</code> help both users and machines understand your content.</p>
+      </article>
+
+      <article>
+        <h3>Accessibility</h3>
+        <p>Using ARIA labels, headings in order, and proper landmarks allows screen readers and assistive tech to navigate your site easily.</p>
+      </article>
+
+      <article>
+        <h3>SEO Basics</h3>
+        <p>Headings, descriptive text, and a well-structured layout ensure your site is easily indexed by search engines.</p>
+      </article>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>Have feedback? <a href="mailto:example@example.com">Send an email</a> to get in touch.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Akinlolu Felicia. All rights reserved.</p>
+  </footer>
+</body>
+</html>
