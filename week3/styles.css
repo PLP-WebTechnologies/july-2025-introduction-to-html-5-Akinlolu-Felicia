@@ -1,0 +1,72 @@
+/*
+ * This is the stylesheet for the CSS Box Model assignment.
+ * It's structured to show how styles are applied and how the box model works.
+ */
+
+/* The universal selector applies this rule to all elements. */
+/* Using border-box ensures that padding and border are included in the element's total width and height. */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global container styling for consistent spacing and appearance. */
+.page-header, .main-content, .page-footer {
+    max-width: 800px;
+    margin: 20px auto; /* This centers the containers and adds space above and below them. */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #34495e;
+}
+
+/* --- Box Model Demonstration Section --- */
+
+.box-model-container {
+    /* Padding creates space *inside* the border. This space is part of the element's box. */
+    padding: 25px;
+    
+    /* Border is the line that wraps around the padding and content. */
+    border: 4px solid #2ecc71;
+
+    /* Margin creates space *outside* the border, pushing other elements away. */
+    margin: 30px 0;
+    
+    background-color: #e8f8f5; /* Background color for the content and padding area. */
+    text-align: center;
+}
+
+.card {
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    padding: 20px;
+    margin: 40px 0; /* Creates space between this card and the element above and below it. */
+    border-radius: 8px;
+}
+
+/* --- Layout Section --- */
+
+.two-column-layout {
+    display: flex; /* This property enables a flexible layout for the columns. */
+    gap: 20px; /* 'gap' adds space between the columns, which is effectively a margin. */
+}
+
+.column {
+    flex: 1; /* This makes both columns take up equal space within their container. */
+    background-color: #f9f9f9;
+    padding: 15px; /* Adds space inside each column. */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
