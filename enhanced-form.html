@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form and Content</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 2em auto;
+            max-width: 800px;
+            padding: 0 1em;
+            color: #333;
+        }
+
+        header, main, section, footer {
+            margin-bottom: 2em;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        img, video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1em 0;
+        }
+
+        form {
+            background: #f9f9f9;
+            padding: 2em;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 1.5em;
+            margin-bottom: 2em;
+            border-radius: 4px;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #2c3e50;
+        }
+
+        label {
+            display: block;
+            margin-bottom: .5em;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+
+        input:invalid {
+            border-color: #e74c3c;
+        }
+
+        input:valid {
+            border-color: #2ecc71;
+        }
+
+        .radio-group, .checkbox-group {
+            margin-bottom: 1em;
+        }
+
+        .radio-group label, .checkbox-group label {
+            display: inline-block;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Enhanced Web Page with Form</h1>
+        <p>This page demonstrates the use of semantic HTML, lists, tables, media, and an accessible HTML5 form with native validation.</p>
+    </header>
+
+    <main>
+        <section id="content-showcase">
+            <h2>Content Showcase</h2>
+
+            <article>
+                <h3>An Ordered List of My Favorite Things</h3>
+                <ol>
+                    <li>Learning new technologies 💻</li>
+                    <li>Hiking in the mountains 🏞️</li>
+                    <li>Reading classic literature 📚</li>
+                </ol>
+            </article>
+
+            <article>
+                <h3>An Unordered List of Daily Tasks</h3>
+                <ul>
+                    <li>Check emails and respond to important messages</li>
+                    <li>Complete the enhanced-form.html project</li>
+                    <li>Plan and prepare dinner</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Quarterly Performance Data</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Quarter</th>
+                            <th>Revenue ($)</th>
+                            <th>New Users</th>
+                            <th>Customer Satisfaction (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Q1</td>
+                            <td>150,000</td>
+                            <td>2,500</td>
+                            <td>92%</td>
+                        </tr>
+                        <tr>
+                            <td>Q2</td>
+                            <td>180,000</td>
+                            <td>3,100</td>
+                            <td>95%</td>
+                        </tr>
+                        <tr>
+                            <td>Q3</td>
+                            <td>210,000</td>
+                            <td>3,800</td>
+                            <td>94%</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Total</td>
+                            <td>540,000</td>
+                            <td>9,400</td>
+                            <td>-</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+
+            <article>
+                <h3>Media Gallery</h3>
+                <figure>
+                    <img src="https://via.placeholder.com/600x300.png?text=Placeholder+Image+of+Nature" alt="A beautiful placeholder image of a nature scene." loading="lazy">
+                    <figcaption>A placeholder image representing a scenic view. </figcaption>
+                </figure>
+
+                <figure>
+                    <video controls muted autoplay loop preload="auto">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>A placeholder video demonstrating HTML5 video capabilities. </figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="enhanced-form">
+            <h2>Complete HTML5 Form</h2>
+            <p>Please fill out the form below. All fields are required unless otherwise noted.</p>
+
+            <form action="#" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="John" required>
+
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Doe" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="johndoe@example.com" required autocomplete="email">
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890" required autocomplete="tel">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Details</legend>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" minlength="5" pattern="[a-zA-Z0-9]+" title="Username must be alphanumeric and at least 5 characters long." required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" minlength="8" required>
+
+                    <label for="confirm_password">Confirm Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" minlength="8" required>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Additional Details</legend>
+
+                    <label for="birthdate">Date of Birth:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                    
+                    <label for="age">Age (Optional):</label>
+                    <input type="number" id="age" name="age" min="18" max="99" placeholder="e.g., 25">
+                    
+                    <label for="bio">Bio:</label>
+                    <textarea id="bio" name="bio" rows="4" placeholder="Tell us a little about yourself (optional)." maxlength="250"></textarea>
+
+                    <div class="radio-group">
+                        <label>Preferred Contact Method:</label>
+                        <input type="radio" id="contact_email" name="contact_method" value="email" required>
+                        <label for="contact_email">Email</label>
+                        <input type="radio" id="contact_phone" name="contact_method" value="phone">
+                        <label for="contact_phone">Phone</label>
+                    </div>
+
+                    <label for="role">Your Role:</label>
+                    <select id="role" name="role" required>
+                        <option value="" disabled selected>Select your role...</option>
+                        <option value="student">Student</option>
+                        <option value="professional">Professional</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country" value="United States" readonly>
+                </fieldset>
+
+                <input type="submit" value="Submit Form">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Enhanced Form. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
